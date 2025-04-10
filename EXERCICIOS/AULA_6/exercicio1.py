@@ -18,4 +18,4 @@ for i in range(numero):
     else:
         print("Não é primo")
 
-print(f"A quantidade de primos éa {primos} de {numero} números")
+print(f"A quantidade de primos é {primos} de {numero} números")

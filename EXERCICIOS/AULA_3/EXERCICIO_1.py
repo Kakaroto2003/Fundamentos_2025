@@ -5,23 +5,23 @@
 #Siga a tabela de códigos:
 
 CO = int(input("Digite o código de Origem: "))
+Preco = float(input("Digite o preço do produto: "))
 
 if CO == 1:
-    print("O produto é do Sul")
+    print(f"Preco {Preco:.2f}""O produto é do Sul")
 elif CO == 2:
-    print("O produto é do Norte")
+    print(f"Preco {Preco:.2f}""O produto é do Norte")
 elif CO == 3:
-    print("O produto é do Leste")
+    print(f"Preco {Preco:.2f}""O produto é do Leste")
 elif CO == 4:
-    print("O produto é do Oeste")
+    print(f"Preco {Preco:.2f}""O produto é do Oeste")
 elif CO == 5 or CO ==6:
-    print("O produto é do Nordeste")
+    print(f"Preco {Preco:.2f}""O produto é do Nordeste")
 elif CO == 7 or CO == 8 or CO == 9:
-    print("O produto é do Sudeste")
+    print(f"Preco {Preco:.2f}""O produto é do Sudeste")
 elif CO >= 10 and CO <= 20:
-    print("O produto é do Centro-Oeste")
+    print(f"Preco {Preco:.2f}""O produto é do Centro-Oeste")
 elif CO >= 25 and CO <= 30:
-    print("O produto é do Nordeste")
+    print(f"Preco {Preco:.2f}""O produto é do Nordeste")
 else:
-    print("Origem do produto desconhecida")
-
+    print(f"Preco {Preco:.2f}""Origem do produto desconhecida")
