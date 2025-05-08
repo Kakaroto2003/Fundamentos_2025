@@ -1,0 +1,5 @@
+arquivo = open("Exemplo_1.txt", "w")
+
+for linha in range(1, 101):
+    arquivo.write("Linha %d\n" % linha)
+arquivo.close()

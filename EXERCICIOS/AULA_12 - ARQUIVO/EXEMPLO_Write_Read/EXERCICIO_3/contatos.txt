@@ -1,0 +1,4 @@
+& C:/ProgramData/Anaconda3/python.exe "c:/Users/uniccsilva/Documents/GitHub/Fundamentos_2025/EXERCICIOS/AULA_12 - ARQUIVO/Exercicio_2.py",123
+Caio,123
+Joao,456
+Mli,789

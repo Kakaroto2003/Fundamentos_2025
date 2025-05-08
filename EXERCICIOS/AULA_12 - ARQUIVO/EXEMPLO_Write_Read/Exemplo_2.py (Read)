@@ -1,0 +1,5 @@
+arquivo = open("Exemplo_1.txt", "r")
+
+for linha in arquivo.readlines():
+    print(linha.strip()) # end='' remove a quebra de linha / print(linha.strip()) # remove a quebra de linha
+arquivo.close()
