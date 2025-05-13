@@ -1,0 +1,25 @@
+Cesar,curtiu,fake
+caio silva,buscou,Levanta e Anda
+caio silva,buscou,Eva
+caio silva,curtiu,Eva
+caio silva,descurtiu,Eva
+Pedro,buscou,Pelados em Santos
+caio,buscou,Fake Love
+caio,buscou,Fake Love
+caio,descurtiu,Eva
+caio,buscou,Fake Love - BTS
+caio,curtiu,Fake Love - BTS
+caio,descurtiu,Fake Love - BTS
+silva,buscou,Viva La Vida - Coldplay
+silva,curtiu,Viva La Vida - Coldplay
+silva,descurtiu,Viva La Vida - Coldplay
+silva,buscou,Viva La Vida - Coldplay
+silva,buscou,Batom de Cereja - Israel & Rodolffo
+silva,buscou,A Praça é Nossa - Gilmelândia
+caio,buscou,Viva La Vida - Coldplay
+caio,curtiu,Viva La Vida - Coldplay
+caio,descurtiu,Eva - Banda Eva
+caio,curtiu,Levanta e Anda - Emicida
+1,buscou,Meus 15 Anos - MC Don Juan
+1,curtiu,Lovely - Billie Eilish
+1,descurtiu,Let Me Love You - DJ Snake
