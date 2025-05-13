@@ -1,0 +1,29 @@
+1,buscou,Someone You Loved - Lewis Capaldi
+1,buscou,In The Name Of Love - Martin Garrix
+1,buscou,Let Me Love You - DJ Snake
+1,buscou,Crazy In Love - Beyoncé
+1,buscou,Love On Top - Beyoncé
+1,buscou,We Found Love - Rihanna
+1,buscou,Love Story - Taylor Swift
+1,buscou,Cosmic Love - Florence + The Machine
+1,buscou,Skinny Love - Birdy
+1,buscou,Amor I Love You - Marisa Monte
+1,buscou,Love Yourself - Justin Bieber
+1,buscou,Fake Love - BTS
+1,buscou,Lovely - Billie Eilish
+1,buscou,Fake Love - BTS
+1,curtiu,Fake Love - BTS
+1,descurtiu,Dias de Luta - Ira!
+Kayo,buscou,Someone You Loved - Lewis Capaldi
+Kayo,buscou,In The Name Of Love - Martin Garrix
+Kayo,buscou,Let Me Love You - DJ Snake
+Kayo,buscou,Crazy In Love - Beyoncé
+Kayo,buscou,Love On Top - Beyoncé
+Kayo,buscou,We Found Love - Rihanna
+Kayo,buscou,Love Story - Taylor Swift
+Kayo,buscou,Cosmic Love - Florence + The Machine
+Kayo,buscou,Skinny Love - Birdy
+Kayo,buscou,Amor I Love You - Marisa Monte
+Kayo,buscou,Love Yourself - Justin Bieber
+Kayo,buscou,Fake Love - BTS
+Kayo,buscou,Lovely - Billie Eilish

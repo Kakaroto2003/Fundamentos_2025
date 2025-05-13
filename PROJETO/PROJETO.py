@@ -203,28 +203,52 @@ def descurtir_musica(usuario):
 
 
 def ver_historico(usuario):
-    print(f"\n=== Histórico de {usuario} ===\n")
+    curtidas = []
+    descurtidas = []
+
     try:
         with open(HISTORICO_ARQ, "r", encoding="utf-8") as arq:
             for linha in arq:
                 try:
                     u, acao, musica = linha.strip().split(",", 2)
                     if u == usuario:
-                        print(f"{acao.capitalize()} - {musica}")
+                        if acao == "curtiu":
+                            curtidas.append(musica)
+                        elif acao == "descurtiu":
+                            descurtidas.append(musica)
                 except ValueError:
                     continue
     except FileNotFoundError:
         print("Nenhum histórico encontrado.")
+        return
+
+    print(f"\n=== Histórico de {usuario} ===")
+
+    if curtidas:
+        print("\nMúsicas Curtidas:")
+        for m in curtidas:
+            print(f"  - {m}")
+    else:
+        print("\nNenhuma música curtida.")
+
+    if descurtidas:
+        print("\nMúsicas Descurtidas:")
+        for m in descurtidas:
+            print(f"  - {m}")
+    else:
+        print("\nNenhuma música descurtida.")
+
 
 
 def gerenciar_playlists(usuario):
     while True:
-        print("\n--- Gerenciar Playlists ---")
+        print("\n--- Gerenciar Playlists ---\n")
         print("1 - Criar nova playlist")
-        print("2 - Adicionar música à playlist")
-        print("3 - Remover música da playlist")
-        print("4 - Ver minhas playlists")
-        print("0 - Voltar")
+        print("2 - Deletar playlist")
+        print("3 - Adicionar música à playlist")
+        print("4 - Remover música da playlist")
+        print("5 - Ver minhas playlists")
+        print("0 - Voltar\n")
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
@@ -288,7 +312,7 @@ def gerenciar_playlists(usuario):
                 print("Playlist não encontrada ou música não estava presente.")
 
         elif escolha == "4":
-            print("\n--- Minhas Playlists ---")
+            print("\n--- Minhas Playlists ---\n")
             try:
                 with open(PLAYLISTS_ARQ, "r", encoding="utf-8") as f:
                     for linha in f:
