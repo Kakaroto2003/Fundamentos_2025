@@ -257,9 +257,64 @@ def gerenciar_playlists(usuario):
                 f.write(f"{usuario},{nome},\n")
             print("Playlist criada com sucesso!")
 
-        elif escolha == "2":
+        elif escolha == "2":  # Deletar playlist
+            playlist = input("Nome da playlist que deseja deletar: ").strip()
+            linhas = []
+            deletada = False
+
+            try:
+                with open(PLAYLISTS_ARQ, "r", encoding="utf-8") as f:
+                    for linha in f:
+                        partes = linha.strip().split(",", 2)
+                        if not (len(partes) == 3 and partes[0] == usuario and partes[1] == playlist):
+                            linhas.append(linha)
+                        else:
+                            deletada = True
+            except FileNotFoundError:
+                pass
+
+            if deletada:
+                with open(PLAYLISTS_ARQ, "w", encoding="utf-8") as f:
+                    f.writelines(linhas)
+                print("Playlist deletada com sucesso!")
+            else:
+                print("Playlist não encontrada.")
+
+        elif escolha == "3":  # Adicionar música
             playlist = input("Nome da playlist: ").strip()
-            musica = input("Música (Título - Artista): ").strip()
+            nome = input("Digite parte do nome da música que deseja adicionar: ").strip().lower()
+            opcoes = []
+
+            try:
+                with open(MUSICAS_ARQ, "r", encoding="utf-8") as arq:
+                    for linha in arq:
+                        if linha.strip():
+                            try:
+                                titulo, artista = [x.strip() for x in linha.strip().split(",")]
+                                if nome in titulo.lower():
+                                    opcoes.append(f"{titulo} - {artista}")
+                            except ValueError:
+                                continue
+            except FileNotFoundError:
+                print("Arquivo de músicas não encontrado.")
+                continue
+
+            if not opcoes:
+                print("Nenhuma música encontrada.")
+                continue
+            elif len(opcoes) == 1:
+                musica = opcoes[0]
+            else:
+                print("\nMúsicas encontradas:")
+                for i, m in enumerate(opcoes, start=1):
+                    print(f"{i} - {m}")
+                escolha_musica = input("Digite o número da música: ")
+                if escolha_musica.isdigit() and 1 <= int(escolha_musica) <= len(opcoes):
+                    musica = opcoes[int(escolha_musica) - 1]
+                else:
+                    print("Opção inválida.")
+                    continue
+
             linhas = []
             atualizada = False
 
@@ -283,9 +338,41 @@ def gerenciar_playlists(usuario):
             else:
                 print("Playlist não encontrada.")
 
-        elif escolha == "3":
+        elif escolha == "4":  # Remover música
             playlist = input("Nome da playlist: ").strip()
-            musica = input("Música a remover (Título - Artista): ").strip()
+            nome = input("Digite parte do nome da música que deseja remover: ").strip().lower()
+            opcoes = []
+
+            try:
+                with open(MUSICAS_ARQ, "r", encoding="utf-8") as arq:
+                    for linha in arq:
+                        if linha.strip():
+                            try:
+                                titulo, artista = [x.strip() for x in linha.strip().split(",")]
+                                if nome in titulo.lower():
+                                    opcoes.append(f"{titulo} - {artista}")
+                            except ValueError:
+                                continue
+            except FileNotFoundError:
+                print("Arquivo de músicas não encontrado.")
+                continue
+
+            if not opcoes:
+                print("Nenhuma música encontrada.")
+                continue
+            elif len(opcoes) == 1:
+                musica = opcoes[0]
+            else:
+                print("\nMúsicas encontradas:")
+                for i, m in enumerate(opcoes, start=1):
+                    print(f"{i} - {m}")
+                escolha_musica = input("Digite o número da música: ")
+                if escolha_musica.isdigit() and 1 <= int(escolha_musica) <= len(opcoes):
+                    musica = opcoes[int(escolha_musica) - 1]
+                else:
+                    print("Opção inválida.")
+                    continue
+
             linhas = []
             atualizada = False
 
@@ -311,7 +398,7 @@ def gerenciar_playlists(usuario):
             else:
                 print("Playlist não encontrada ou música não estava presente.")
 
-        elif escolha == "4":
+        elif escolha == "5":  # Ver playlists
             print("\n--- Minhas Playlists ---\n")
             try:
                 with open(PLAYLISTS_ARQ, "r", encoding="utf-8") as f:
@@ -320,9 +407,9 @@ def gerenciar_playlists(usuario):
                         if len(partes) == 3 and partes[0] == usuario:
                             nome = partes[1]
                             musicas = partes[2].strip(';').split(';') if partes[2] else []
-                            print(f"Playlist: {nome}")
+                            print(f"Playlist: {nome}\n")
                             for m in musicas:
-                                print(f"  - {m}")
+                                print(f"  - {m}\n")
             except FileNotFoundError:
                 print("Nenhuma playlist encontrada.")
 
