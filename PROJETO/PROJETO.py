@@ -7,6 +7,7 @@ MENU_USUARIO = {
     0: "Voltar"
 }
 
+
 USUARIOS_ARQ = "usuarios.txt"
 MUSICAS_ARQ = "musicas.txt"
 HISTORICO_ARQ = "historico.txt"
@@ -75,22 +76,22 @@ def menu_usuario(usuario):
         opcao = input("\nEscolha uma opção: ")
 
         if opcao == "1":
-            buscar_musica(usuario)
+            busca(usuario)
         elif opcao == "2":
             curtir_musica(usuario)
         elif opcao == "3":
             descurtir_musica(usuario)
         elif opcao == "4":
-            ver_historico(usuario)
+            historico(usuario)
         elif opcao == "5":
-            gerenciar_playlists(usuario)
+            playlists(usuario)
         elif opcao == "0":
             break
         else:
             print("Opção inválida!")
 
 
-def buscar_musica(usuario):
+def busca(usuario):
     nome = input("Digite o nome da música: ").strip().lower()
     encontrado = False
 
@@ -190,7 +191,7 @@ def descurtir_musica(usuario):
             print("Opção inválida.")
 
 
-def ver_historico(usuario):
+def historico(usuario):
     curtidas = []
     descurtidas = []
 
@@ -223,7 +224,7 @@ def ver_historico(usuario):
         print("\nNenhuma música descurtida.")
 
 
-def gerenciar_playlists(usuario):
+def playlists(usuario):
     while True:
         print("\n--- Gerenciar Playlists ---\n")
         print("1 - Criar nova playlist")

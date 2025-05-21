@@ -102,3 +102,33 @@ re,buscou,Livre Pra Voar - Exaltasamba
 re,buscou,Flores - Titãs
 re,curtiu,Resposta - Skank
 re,descurtiu,Relicário - Nando Reis
+ds,buscou,Scared To Be Lonely - Martin Garrix
+ds,buscou,Secrets - OneRepublic
+ds,buscou,Set Fire To The Rain - Adele
+ds,buscou,Idontwannabeyouanymore - Billie Eilish
+ds,buscou,Umbrella - Rihanna
+ds,buscou,Firework - Katy Perry
+ds,buscou,Teenage Dream - Katy Perry
+ds,buscou,Wildest Dreams - Taylor Swift
+ds,buscou,Break My Heart - Dua Lipa
+ds,buscou,Dog Days Are Over - Florence + The Machine
+ds,buscou,Clearest Blue - CHVRCHES
+ds,buscou,The Mother We Share - CHVRCHES
+ds,buscou,Trem Bala - Ana Vilela
+ds,buscou,Escreve Aí - Luan Santana
+ds,buscou,Realce - Gilberto Gil
+ds,buscou,AmarElo - Emicida
+ds,buscou,Recairei - Os Barões da Pisadinha
+ds,buscou,Batom de Cereja - Israel & Rodolffo
+ds,buscou,Nota de Repúdio - Gusttavo Lima
+ds,buscou,We Don't Talk Anymore - Charlie Puth
+ds,buscou,Just The Way You Are - Bruno Mars
+ds,buscou,Treasure - Bruno Mars
+ds,buscou,Grenade - Bruno Mars
+ds,buscou,Relicário - Nando Reis
+ds,buscou,Resposta - Skank
+ds,buscou,Amores Imperfeitos - Skank
+ds,buscou,Pura Adrenalina - Belo
+ds,buscou,Livre Pra Voar - Exaltasamba
+ds,buscou,Flores - Titãs
+ds,descurtiu,Treasure - Bruno Mars
