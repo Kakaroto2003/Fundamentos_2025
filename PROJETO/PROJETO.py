@@ -70,7 +70,7 @@ def login():
 
 def menu_usuario(usuario):
     while True:
-        print("\n=== Menu do Usuário ===\n")
+        print("\n=== Spoti Menu ===\n")
         for k, v in MENU_USUARIO.items():
             print(f"{k} - {v}")
         opcao = input("\nEscolha uma opção: ")
@@ -226,7 +226,7 @@ def historico(usuario):
 
 def playlists(usuario):
     while True:
-        print("\n--- Gerenciar Playlists ---\n")
+        print("\n--- Spoti Playlist ---\n")
         print("1 - Criar nova playlist")
         print("2 - Deletar playlist")
         print("3 - Adicionar música à playlist")
